@@ -1,0 +1,376 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: var(--ltn__body-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8;
+    margin: 0 auto;
+
+}
+.navbar
+{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ width: 100%;
+ /* position: fixed; */
+ margin-top: 20px;
+
+}
+.navbar a{
+    color: black;
+}
+.logo{
+    font-size: 20px;
+}
+.ex{
+    color: brown;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul li{
+    margin: 0 20px;
+    size: 30rem;
+}
+.navbar ul li .active{
+    color: brown;
+}
+.navbar ul li img{
+    background-color: black;
+    width: 30%;
+    margin-top: 10px;
+}
+.home{
+    position: relative;
+    border-width: 2px solid transparent;
+    
+}
+.div-home{
+    position:relative;
+	margin:0 auto;
+    left: 0;
+    top: 0;
+    /* border: 1px solid transparent;
+    animation:animate 6s ease-in-out infinite ;
+    background-size:cover;
+     */
+    /* margin-top: 40px; */
+    padding: 400px;
+   
+} 
+.div-home img{
+    width: 100%;
+    position:absolute;
+	left:0;
+    top: 30px;
+    padding: 40px;
+}
+.div-home img.image-de-dessus{
+    animation-name: fondu-in-out;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	animation-direction: alternate;
+}
+
+@keyframes fondu-in-out {
+	0%    { opacity:1; transform: scale(1,1);
+           -webkit-transform:scale(1,1); }
+	25%   { opacity:1; transform: scale(0.99,0.99);
+        -webkit-transform:scale(0.99,0.99);}
+	75%   { opacity:0; transform: scale(0.98,0.98);
+        -webkit-transform:scale(0.98,0.98);}
+	100%  { opacity:0; transform: scale(0.96,0.96);
+        -webkit-transform:scale(0.96,0.96);}
+}
+
+/* 
+@keyframes animate {
+    0%{
+    
+      background-image:url(img1.jpg);
+      transform: scale(1,1);
+      -webkit-transform:scale(1,1);
+     }
+  
+     25%{
+      background-image: url(img1.jpg);
+      transform: scale(0.99,0.99);
+      -webkit-transform:scale(0.99,0.99);
+     }
+     50%{
+      background-image:url(img1.jpg);
+      transform: scale(0.98,0.98);
+      -webkit-transform:scale(0.98,0.98);
+     }
+     75%{
+      background-image: url(img2.jpg);
+      transform: scale(0.97,0.97);
+      -webkit-transform:scale(0.97,0.97);
+  
+    }
+    100%{
+      background-image: url(img2.jpg);
+      transform: scale(0.96,0.96);
+      -webkit-transform:scale(0.96,0.96);
+    }
+   } */
+   .content{
+    position: absolute;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-top: -200px;
+    margin-left: -200px;
+    
+   }
+   .paragra1{
+    text-align: left;
+   }
+   .paragra2{
+    text-align: end;
+   }
+   .paragra3{
+    text-align: end;
+   }
+   .paragra4{
+    text-transform: uppercase ;
+    font-weight: 500;
+    font-size: 120px ;
+    color: beige;
+   }
+   .paragra5{
+    text-align: end;
+   }
+   .paragra6{
+    text-align: end;
+    width: 100%;
+    
+   }
+   .btn1{
+    padding: 10px;
+    border-radius: 0.1rem;
+    border-color: beige;
+    opacity: 0.7;
+    background-color:rgb(111, 14, 34);
+    cursor: pointer;
+    color:white;
+    font-size: 14px;
+    margin: 8px 6px; 
+   }
+   .btn2{
+    border-radius: 0.1rem;
+    border-color: beige;
+    opacity: 0.7;
+    padding: 10px;
+    background-color:rgb(37, 30, 37);
+    cursor: pointer;
+    color:white;
+    font-size: 14px;
+    margin: 8px 4px; 
+   }
+   .article-home{
+    position: absolute;
+    top: 810px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    
+   }
+   .div-home1{
+    text-align: center;
+    width: 32%;
+   }
+   
+   .div-home2{
+    text-align: center;
+    width:32%;
+   }
+   
+   .div-home3{
+    text-align: center;
+    width: 32%;
+   }
+   .haut1{
+    background-color: rgb(43, 43, 97);
+    opacity: 0.6 ;
+    color: beige;
+    height: 15vh;
+    border: 1px solid transparent;
+   }
+   .haut1 h2{
+     font-weight: 300;
+   }
+   .haut1 p{
+    font-size: 18px;
+    color: beige;
+   }
+   .bas1{
+    border: 1px solid transparent;
+    background-color: rgb(43, 43, 97);
+    opacity: 0.4 ;
+    font-size: 16px;
+    color: beige;
+   }
+   .haut2{
+    border: 1px solid transparent;
+    background-color: rgb(48, 74, 72);
+    opacity: 0.6 ;
+    color: beige;
+    height: 15vh;
+   }
+   .haut2 h2{
+    font-weight: 300;
+    }
+   .haut2 p{
+    font-size: 18px;
+    color: beige;
+    }
+    .bas2{
+    border: 1px solid transparent;
+    background-color: rgb(48, 74, 72);
+    opacity: 0.4;
+    font-size: 16px;
+    color: beige;
+    }
+   .haut3{
+    border: 1px solid transparent;
+    background-color: rgb(213, 107, 108);
+    opacity: 0.6 ;
+    color: beige;
+    height: 15vh;
+   }
+   .haut3 h2{
+    font-weight: 300;
+    }
+   .haut3 p{
+    font-size: 18px;
+    color: beige;
+    }
+    .bas3{
+    border: 1px solid transparent;
+    background-color: rgb(213, 107, 108);
+    opacity: 0.4 ;
+    font-size: 16px;
+    color: beige;
+    }
+
+    .about{
+      margin-top: 250px;
+      text-align: center;
+    }
+    .abou{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 50px;
+    }
+    .creat{
+        color: brown;
+    }
+    .sabou{
+        font-size: 16px;
+        font-weight: 200;
+       
+    }
+    .info-about{
+        margin: 40px 200px 40px 200px;
+        text-align:center;
+        font-size: 16px;
+    }
+    .div-about{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        /* margin: 40px 100px 40px 0px; */
+        margin-left: 80px;
+        margin-right: 20px;
+    }
+    .div-about-div{
+        width: 33%;
+        display: flex;
+        flex-direction: row;
+    }
+    .div-about-div .fa{
+        width: 10%;
+        font-size: 50px;
+        padding: 0px 10px;
+    }
+    .div-about-div div{
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    .div-about-div .titre{
+       font-size: 22px;
+       font-weight: 300;
+       text-align: left;
+       line-height: 2;
+       padding: 0 35px;
+    }
+    .div-about-div .info{
+     font-size: 14px;
+     text-align: left;
+     padding: 0px 35px;
+    }
+    .work{
+        position :relative;
+        margin-top: 80px;
+        padding: 40px;
+        /* width: 100%;
+        height: 100vh; */
+    }
+    .div-work{
+        position: relative;
+        left: 0;
+        top: 0;
+        
+    }
+    .div-work img{
+        position: absolute;
+        left:0;
+        width: 100%;
+       
+    }
+    .div-work img.img-dessus{
+    animation-name: fondu-on-out;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-duration: 6s;
+	animation-direction: alternate;
+    
+    }
+    
+@keyframes fondu-on-out {
+	0%    { opacity:1; }
+	25%   { opacity:1; }
+	75%   { opacity:0; }
+	100%  { opacity:0; }
+}
+.work-bas{
+    position: absolute;
+    top: 150px;
+    margin: 50px;
+    text-align: center;
+
+}
+.how{
+    font-size: 25px;
+}
+.aliqua{
+    padding: 0px 300px;
+}
