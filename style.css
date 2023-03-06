@@ -328,6 +328,7 @@ body{
      padding: 0px 35px;
     }
     .work{
+       
         position :relative;
         margin-top: 80px;
         padding: 40px;
@@ -335,6 +336,8 @@ body{
         height: 100vh; */
     }
     .div-work{
+        background-color: black;
+        opacity: 0.9;
         position: relative;
         left: 0;
         top: 0;
@@ -344,7 +347,6 @@ body{
         position: absolute;
         left:0;
         width: 100%;
-       
     }
     .div-work img.img-dessus{
     animation-name: fondu-on-out;
@@ -357,7 +359,7 @@ body{
     
 @keyframes fondu-on-out {
 	0%    { opacity:1; }
-	25%   { opacity:1; }
+	25%   { opacity:0.8; }
 	75%   { opacity:0; }
 	100%  { opacity:0; }
 }
@@ -369,8 +371,170 @@ body{
 
 }
 .how{
-    font-size: 25px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:0.5px;
 }
 .aliqua{
     padding: 0px 300px;
 }
+.work-cercle{
+    position: absolute;
+    display: flex;
+    margin-top: 120px;
+    top: 250px;
+    width: 80%;
+    margin-right: 50px;
+    margin-left: 100px;
+    
+}
+.cercle{
+    margin: 60px;
+    border-radius: 50%;
+    width: 150px;
+    height: 20vh;
+    border: 2px solid;
+    
+    
+}
+.cercle .fa{
+ font-size: 30px;
+ position: relative;
+ top: 55px;
+ left: 55px;
+ 
+}
+.work-title{
+   position: relative;
+   top: -20px;
+   left: 90px;
+   border-bottom: 3px solid grey;
+   width: 80px;
+}
+.work-title2{
+    position: relative;
+    top: -20px;
+    left: 90px;
+    border-bottom: 3px solid grey;
+    width: 95px;
+}
+
+.work-title3{
+    position: relative;
+    top: -20px;
+    left: 90px;
+    border-bottom: 3px solid grey;
+    width: 78px; 
+}
+
+.work-title4{
+   position: relative;
+   top: -20px;
+   left: 90px;
+   border-bottom: 3px solid grey;
+   width: 120px;
+}
+.work-text{
+    text-align: center;
+    
+}
+.section-team{
+    
+    margin-top: 1000px;
+}
+.div-team{
+ width: 100%;
+ text-align: center;
+}
+.h1-team{
+  font-size: 60px;
+  text-transform: uppercase;
+  line-height: 80px;
+  font-weight: 700;
+}
+.team-p1{
+  font-size: 15px;
+ 
+}
+.team-p2{
+    margin: 30px 150px 0px 150px;
+    font-size: 18px;
+}
+.article-team{
+    margin-top: 50px;
+}
+.div-team2{
+    display: flex;
+    margin: 30px 150px 0px 150px;
+    overflow: hidden;
+}
+.div-team-img{
+ 
+}
+.div-team-img img{
+  width: 90%;
+  margin: 2px;
+}
+.team-text{
+    text-align: center;
+}
+.creat2{
+    color: brown;
+    font-size: 15px;
+    text-align: center;
+}
+.div-team3{
+    margin-top: 40px;
+    text-align: center;
+}
+.creat3{
+    color: brown;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: bold;
+}
+.people{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.team-text2{
+    padding-right: 400px;
+    padding-left: 400px;
+    
+}
+.section-wiew{
+    margin-top: 90px;
+    
+}
+.div-section-view{
+    display: flex;
+}
+.div-view{
+    position: relative;
+}
+.div-view img{
+    width: 80%;
+    margin-left: 50px;
+}
+.btn3{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+    padding: 10px;
+    border-radius: 0.1rem;
+    border-color: beige;
+    opacity: 0.4;
+    background-color:rgb(108, 101, 102);
+    cursor: pointer;
+    color:white;
+    font-size: 14px;
+    margin: 8px 6px; 
+}
+.div-view2{
+    padding: 20px;
+}
+
+
